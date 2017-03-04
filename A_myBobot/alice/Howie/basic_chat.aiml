@@ -1,0 +1,34 @@
+<aimlversion="0.0.1" encoding="UTF-8">
+<!-- basic_chat.aiml -->
+<aiml>
+ 
+    <category>
+        <pattern>HELLO</pattern>
+        <template>
+            Hi!
+        </template>
+    </category>
+ 
+    <category>
+        <pattern>WHOAREYOU</pattern>
+        <template>
+            I'm a bot, silly!
+        </template>
+    </category>
+ 
+    <category>  
+        <pattern>* NOT *  GOOD ANSWER</pattern>  
+        <template>  
+            Sorry. What would be a good answer?  
+        </template>  
+    </category>  
+    <category>  
+        <pattern>_</pattern>  
+            <that>WHAT WOULD BE A GOOD ANSWER</that>  
+        <template>  
+            <system>learn("<input index="3"/>", "<input index="1"/>")</system>  
+             Alright! You can ask me again to see if I got it.  
+        </template>  
+    </category>  
+    
+</aiml>

@@ -1,0 +1,8 @@
+<aiml version="0.0.1" encoding="UTF-8">
+	<category>
+		<pattern>LOAD ALICE</pattern>
+		<template>
+			<learn>basic_chat.aiml</learn>
+		<template>
+	<category>
+</aiml>

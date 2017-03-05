@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml version="1.0">
+
+    <meta name="language" content="zh"/>
+
+    <category>
+        <pattern>* 再见</pattern>
+        <template>
+            <srai>BYE</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>再见</pattern>
+        <template>
+            <srai>BYE</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>BYE</pattern>
+        <template>
+            <random>
+                <li>再见<get name="name"/>.
+                </li>
+                <li>再见啦,<get name="name"/>.
+                </li>
+                <li>下次见,<get name="name"/>.
+                </li>
+                <li>谢谢你陪我聊天,<get name="name"/>.
+                </li>
+                <li>改天见,<get name="name"/>.
+                </li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>谢谢</pattern>
+        <template>
+            <random>
+                <li>不客气.</li>
+                <li>你太客气了.</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>你好</pattern>
+        <template>
+            <srai>HELLO</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HELLO</pattern>
+        <template>
+            <random>
+                <li>你好.</li>
+                <li>你也好.</li>
+                <li>你好啊.</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* 名字</pattern>
+        <template>
+            <srai>NAME</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>NAME</pattern>
+        <template>
+            <random>
+                <li>我是测试机器人.</li>
+                <li>你可以叫我vs.</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* 几岁 *</pattern>
+        <template>
+            <srai>AGE</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>AGE</pattern>
+        <template>
+            我刚出生没有多久呢
+        </template>
+    </category>
+
+    <category>
+        <pattern>* 什么问题 *</pattern>
+        <template>
+            <srai>EVERYTHING</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>EVERYTHING</pattern>
+        <template>
+            just so so，不过你可以试一试，我擅长解决法律问题而已
+        </template>
+    </category>
+
+    <category>
+        <pattern>* 目标 *</pattern>
+        <template>
+            <srai>TARGET</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>TARGET</pattern>
+        <template>
+            我有一个小目标，先看能不能赚个1个亿
+        </template>
+    </category>
+</aiml>
